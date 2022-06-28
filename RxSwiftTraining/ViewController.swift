@@ -43,11 +43,12 @@ class ViewController: UIViewController {
         
         guard let sourceImge = photoImageView.image else { return }
         
-        FilterService().applyFilter(to: sourceImge) { filteredImage in
-            DispatchQueue.main.async {
-                self.photoImageView.image = filteredImage
-            }
-        }
+        FilterService().applyFilter(to: sourceImge)
+            .subscribe { filteredImage in
+                DispatchQueue.main.async {
+                    self.photoImageView.image = filteredImage
+                }
+            }.disposed(by: disposeBag)
     }
     
     private func updateUI(with image: UIImage) {
