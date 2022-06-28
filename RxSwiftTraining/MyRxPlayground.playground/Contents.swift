@@ -58,17 +58,131 @@ let disposeBag = DisposeBag()
 
     //MARK: - BehaviorRelay
 
-let relay = BehaviorRelay(value: [String]())
+//let relay = BehaviorRelay(value: [String]())
+//
+//var value = relay.value
+//
+//value.append("Item 1")
+//value.append("Item 3")
+//relay.accept(value)
+//
+//relay.asObservable()
+//    .subscribe {
+//        print ($0)
+//    }
+//
+//relay.accept(relay.value + ["Item 2"])
 
-var value = relay.value
+    //MARK: - TakeUntil
 
-value.append("Item 1")
-value.append("Item 3")
-relay.accept(value)
+//let subject = PublishSubject<String>()
+//let trigger = PublishSubject<String>()
+//
+//subject.take(until: trigger)
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+//
+//subject.onNext("1")
+//subject.onNext("2")
+//
+//trigger.onNext("X")
+//
+//subject.onNext("3")
 
-relay.asObservable()
-    .subscribe {
-        print ($0)
-    }
 
-relay.accept(relay.value + ["Item 2"])
+    //MARK: - TakeWhile
+//
+//Observable.of(2,4,3,6,8,9,10)
+//    .take(while: {
+//        return $0 % 2 == 0
+//    }).subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+
+    //MARK: - Take
+//
+//Observable.of(1,2,3,5,9)
+//    .take(4)
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+
+    //MARK: - SkipUntil
+//let subject = PublishSubject<Int>()
+//let trigger = PublishSubject<String>()
+//
+//subject.skip(until: trigger)
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+//
+//subject.onNext(8)
+//subject.onNext(3)
+//subject.onNext(5)
+//
+//trigger.onNext("X")
+//
+//subject.onNext(5)
+//subject.onNext(3)
+//subject.onNext(8)
+
+    //MARK: - SkipWhile
+
+//Observable.of(2,2,4,4,6,7,8,9,0,1,2,5)
+//    .skip(while: {
+//        return $0 % 2 == 0
+//    }).subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+
+    //MARK: - Skip
+
+//Observable.of(1,2,3,3,4,5,6)
+//    .skip(3)
+//    .subscribe(onNext: {
+//        print($0)
+//    }).disposed(by: disposeBag)
+
+    //MARK: - Filter
+//
+//Observable.of(1,2,3,4,5,6,7)
+//    .filter { $0 % 2 == 0}
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+
+    //MARK: - Element At
+
+//Observable.of(1,2,3,4,5,6,7,8,9)
+//    .element(at: 4)
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+//
+//let subject = PublishSubject<String>()
+//
+//subject.element(at: 2)
+//    .subscribe(onNext: { _ in
+//        print ("You are out!")
+//    }).disposed(by: disposeBag)
+//
+//subject.onNext("X")
+//subject.onNext("Y")
+//subject.onNext("K")
+
+    //MARK: - Ignore
+//let strikes = PublishSubject<String>()
+//
+//strikes
+//    .ignoreElements()
+//    .subscribe { _ in
+//        print ("Subscription is called")
+//    }.disposed(by: disposeBag)
+//
+//strikes.onNext("A")
+//strikes.onNext("B")
+//strikes.onNext("C")
+//strikes.onNext("D")
+//
+//strikes.onCompleted()
