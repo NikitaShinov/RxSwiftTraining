@@ -26,6 +26,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Apply filter"/>
+                                <connections>
+                                    <action selector="applyFilterButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tiq-zt-d2h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,6 +51,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="applyFilterButton" destination="Dvw-9o-RGD" id="3Qv-XS-W2l"/>
+                        <outlet property="photoImageView" destination="QRV-7J-G4K" id="YAy-lv-RPG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

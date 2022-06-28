@@ -15,6 +15,7 @@
 		503C25D3286483F60073CEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503C25D1286483F60073CEF6 /* LaunchScreen.storyboard */; };
 		503C25DC2869F4AA0073CEF6 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C25DB2869F4AA0073CEF6 /* PhotosCollectionViewController.swift */; };
 		503C25DE286A11120073CEF6 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C25DD286A11120073CEF6 /* PhotoCollectionViewCell.swift */; };
+		503C25E0286B25930073CEF6 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C25DF286B25930073CEF6 /* FilterService.swift */; };
 		902445B046EE8F52E48821FF /* Pods_RxSwiftTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDBAA1749699DEC3753FC24 /* Pods_RxSwiftTraining.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		503C25DA2864848E0073CEF6 /* MyRxPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyRxPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		503C25DB2869F4AA0073CEF6 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		503C25DD286A11120073CEF6 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		503C25DF286B25930073CEF6 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		6EDBAA1749699DEC3753FC24 /* Pods_RxSwiftTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04F9B76818ECC83E936230B /* Pods-RxSwiftTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTraining.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTraining/Pods-RxSwiftTraining.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 				503C25CA286483F50073CEF6 /* ViewController.swift */,
 				503C25DB2869F4AA0073CEF6 /* PhotosCollectionViewController.swift */,
 				503C25DD286A11120073CEF6 /* PhotoCollectionViewCell.swift */,
+				503C25DF286B25930073CEF6 /* FilterService.swift */,
 				503C25CC286483F50073CEF6 /* Main.storyboard */,
 				503C25CF286483F60073CEF6 /* Assets.xcassets */,
 				503C25D1286483F60073CEF6 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 				503C25CB286483F50073CEF6 /* ViewController.swift in Sources */,
 				503C25DE286A11120073CEF6 /* PhotoCollectionViewCell.swift in Sources */,
 				503C25C7286483F50073CEF6 /* AppDelegate.swift in Sources */,
+				503C25E0286B25930073CEF6 /* FilterService.swift in Sources */,
 				503C25C9286483F50073CEF6 /* SceneDelegate.swift in Sources */,
 				503C25DC2869F4AA0073CEF6 /* PhotosCollectionViewController.swift in Sources */,
 			);
