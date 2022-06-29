@@ -186,3 +186,73 @@ let disposeBag = DisposeBag()
 //strikes.onNext("D")
 //
 //strikes.onCompleted()
+
+    //MARK: - Array To
+//
+//Observable.of(1,2,3,4,5)
+//    .toArray()
+//    .subscribe {
+//        print ($0)
+//    }.disposed(by: disposeBag)
+
+    //MARK: - Map
+//
+//Observable.of(1,2,3,4,5,6)
+//    .map {
+//        return $0 * 2
+//    }.subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+
+    //MARK: - Flat Map
+//struct Student {
+//    var score: BehaviorRelay<Int>
+//}
+//
+//let john = Student(score: BehaviorRelay(value: 90))
+//let mike = Student(score: BehaviorRelay(value: 80))
+//let tom = Student(score: BehaviorRelay(value: 70))
+//
+//let student = PublishSubject<Student>()
+//
+//student.asObservable()
+//    .flatMap { $0.score.asObservable() }
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+//
+//student.onNext(john)
+//john.score.accept(50)
+//john.score.accept(69)
+//student.onNext(mike)
+//mike.score.accept(40)
+//student.onNext(tom)
+
+    //MARK: - Flat Map Latest
+
+//struct Student {
+//    var score: BehaviorRelay<Int>
+//}
+//
+//let john = Student(score: BehaviorRelay(value: 90))
+//let mike = Student(score: BehaviorRelay(value: 80))
+//let tom = Student(score: BehaviorRelay(value: 70))
+//
+//let student = PublishSubject<Student>()
+//
+//student.asObservable()
+//    .flatMapLatest { $0.score.asObservable() }
+//    .subscribe(onNext: {
+//        print ($0)
+//    }).disposed(by: disposeBag)
+//
+//student.onNext(john)
+//john.score.accept(50)
+//john.score.accept(69)
+//student.onNext(mike)
+//mike.score.accept(40)
+//student.onNext(tom)
+
+
+
+
